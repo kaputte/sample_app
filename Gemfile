@@ -6,11 +6,18 @@ gem 'rails', '4.2.4'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'byebug'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'libnotify'
 end
 
 gem 'sass-rails', '~> 5.0'
@@ -24,9 +31,6 @@ group :doc do
   gem 'sdoc', '~> 0.4.0', group: :doc, require: false
 end
 
-group :development, :test do
-  gem 'byebug'
-end
 
 group :development do
   gem 'pg'
