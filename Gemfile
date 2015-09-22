@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby '2.2.3'
 
 gem 'rails', '4.2.4'
+gem 'bootstrap-sass', '2.3' # bootstrap最新は3系である点に注意
+gem 'sprockets'
 
 group :development, :test do
   gem 'sqlite3'
